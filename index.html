@@ -36,12 +36,10 @@
     <!-- main content  -->
     <section>
         <!-- section-header  -->
-        <div class="features">
-            <div class="features-left">
-                <button>Filter</button>
-
+        <div class="main-header">
+            <div class="main-header-left">
                 <div class="sort-by">
-                    <label for="sortBy">Sory By</label>
+                  <span><i class="fa-solid fa-arrow-up-wide-short"></i> Sort By :</span>  
                     <select name="sort-by" id="sortBy">
                         <option value="popular">Most Popular</option>
                         <option value="highest">Highest</option>
@@ -50,7 +48,7 @@
                 </div>
             </div>
 
-            <div class="features-right">
+            <div class="main-header-right">
                 <p id="resultCounts">10 Results</p>
             </div>
         </div>
@@ -63,24 +61,39 @@
         </div>
 
         <div class="course-details">
-            <h3 class="course-title">Node.js For Beginners</h3>
-            <p>Become a back end developer with one course. The complete nodejs course.</p>
-            <p class="course-instructor">Dr. Angela Yu</p>
-            <p class="rating">4.7 (102,369)</p>
-            <p class="course-duration">61.5 total hours</p>
-            <p class="course-lectures">375 lectures</p>
-            <p class="course-level">All levels</p>
-            <p class="course-price">3075</p>
-            <p class="course-tag">Bestseller, New, Popular</p>
+            <div class="details-tag">
+                <h2 class="course-title">Node.js For Beginners</h2>
+                <p>Become a back end developer with one course. The complete nodejs course.</p>
+                <p class="rating small-text"><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star-half-stroke"></i> <i class="fa-regular fa-star"></i> 4.7 (102,369)</p>
+                <div class="course-instructor">
+                    <img src="https://cdn.lazyshop.com/files/84d84f33-5cbd-4cd2-8c63-4a3789e49cfc/product/5a2960f31f56ac1d46be815a33b8d1e9.jpg?x-oss-process=style%2Fthumb" alt="course instructor">
+                    <span class="small-text">Dr. Angela Yu</span>
+                    </div>
+                
+                <p class="course-duration small-text"><i class="fa-solid fa-clock"></i> 61.5 total hours</p>
+                <p class="course-lectures small-text"> <i class="fa-solid fa-person-chalkboard"></i> 375 lectures</p>
+                <p class="course-level small-text"> <i class="fa-solid fa-trophy"></i> All levels</p>
+                <p class="course-tag small-text"><i class="fa-solid fa-circle-check"></i> Bestseller, New, Popular</p>
+            </div>
+           
+            <div class="price-tag">
+                <p class="course-price"><i class="fa-solid fa-indian-rupee-sign"></i> 3,075</p>
+
+                <button class="enroll-btn">Enroll Now</button>
+            </div>
         </div>
     </div>
+
+    
  </div>
     </section>
 
     <!-- footer  -->
     <footer>
-        <p>@EduMe Inc 2024</p>
-        <p>By Rajdev Yadav</p>
+        <div class="footer-text">
+            <p>EduMe Inc. 2024</p>
+            <p>Designed & Developed By Rajdev Yadav</p>
+        </div>
     </footer>
 </body>
 

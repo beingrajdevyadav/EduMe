@@ -91,18 +91,20 @@ header .search-box {
     cursor: pointer;
     border-radius: 30px;
 }
-.hdr-btns button:hover{
+
+.hdr-btns button:hover {
     /* background-color: var(--gray); */
     background-color: #ccc;
     transition: all .5s ease;
 }
+
 .hdr-btns .header-cart {
     display: inline-flex;
     justify-content: center;
     align-items: center;
     width: 50px;
     border-radius: 50%;
-  
+
 }
 
 .hdr-btns .join-btn {
@@ -110,6 +112,161 @@ header .search-box {
     background-color: var(--dark);
     color: var(--white);
 }
-.hdr-btns .join-btn:hover{
+
+.hdr-btns .join-btn:hover {
     background-color: var(--gray);
+}
+
+/* ------------ main content styling --------  */
+section {
+    padding: 1rem 5rem;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--white);
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px var(--lightGray);
+}
+
+.main-header-left {
+    display: flex;
+    gap: 20px;
+}
+
+.main-header-left button {
+    height: 50px;
+    width: 150px;
+}
+
+.sort-by {
+    height: 50px;
+    width: 220px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sort-by span {
+    font-size: 12px;
+}
+
+.sort-by i {
+    font-size: 18px;
+}
+
+.sort-by select {
+    height: 50px;
+    padding: 10px;
+}
+
+#courseList {
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.course {
+    display: flex;
+    justify-content: start;
+    background-color: var(--white);
+    color: var(--gray);
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px var(--lightGray);
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.course-thumbnail {
+    width: 320px;
+    height: auto;
+    border: 2px solid var(--gray);
+}
+
+.course-thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.course-details {
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.details-tag {
+    width: 100%;
+}
+
+.details-tag p {
+    padding: .3rem;
+}
+
+.details-tag .small-text {
+    font-size: 12px;
+}
+
+.course-instructor {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 8px;
+}
+
+.course-instructor img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.price-tag {
+    /* border: 1px solid; */
+    width: 100px;
+    text-align: end;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.price-tag i {
+    font-size: 18px;
+}
+
+.price-tag button {
+    height: 45px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: var(--dark);
+    color: var(--white);
+    border-radius: 50px;
+    font-size: 12px;
+}
+
+.price-tag button:hover {
+    transition: all .5s ease;
+    background-color: var(--gray);
+}
+
+
+footer{
+    padding: 1rem 5rem;
+}
+.footer-text{
+    background-color: var(--white);
+    color: var(--gray);
+    text-align: center;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px var(--lightGray);
+}
+footer p{
+    font-size: 12px;
+    padding: .3rem;
+
 }
